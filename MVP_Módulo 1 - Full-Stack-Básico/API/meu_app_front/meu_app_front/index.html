@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;600;800&display=swap" rel="stylesheet">
+
+    <title>Projeto Hotel</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>LISTA DE HÓSPEDES</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Preencha as informações dos hóspedes para que sejam inseridas na base de dados do Hotel.</h2>
+    </div>
+
+     <!-- Opções para adicionar um novo item -->
+    <!-- <div class="container">
+        <div class="banner">
+            <img src="./img/facade.jpg"
+                alt="Imagem de hotel">       -->
+
+    <section class="newItem">
+            <input type="text" id="newInput" placeholder="Nome">
+            <input type="text" id="newQuantity" placeholder="Quartos">
+            <input type="text" id="newDate" placeholder="Dias">
+            <input type="text" id="newPrice" placeholder="Valor">
+
+            <span onclick="newItem()" class="addBtn">Adicionar</span>
+        </section>
+    </div>    
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Quartos</th>
+                <th>Dias</th>
+                <th>Valor</th>
+                <th id="icon"><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="20px" height="20px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

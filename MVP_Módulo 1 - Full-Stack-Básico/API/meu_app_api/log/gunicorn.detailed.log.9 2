@@ -1,0 +1,55 @@
+[2023-07-11 15:29:39,886] INFO _log() L224   * Restarting with stat - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:43,121] INFO _log() L224   * Detected change in '/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/app.py', reloading - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:43,190] INFO _log() L224   * Restarting with stat - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:45,306] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:29:45] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:45,379] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:29:45] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:45,382] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:29:45] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:45,382] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:29:45] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:45,432] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:29:45] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:29:45,439] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:29:45] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:19,549] ERROR log_exception() L1449 Exception on /hospede [GET] - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask/app.py L1449
+Traceback (most recent call last):
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask_openapi3/scaffold.py", line 109, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/flask_openapi3/do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/app.py", line 84, in get_hospedes
+    return apresenta_hospedes(hospedes), 200
+           ^^^^^^^^^^^^^^^^^^
+NameError: name 'apresenta_hospedes' is not defined
+[2023-07-11 15:31:19,555] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:31:19] "[35m[1mGET /hospede HTTP/1.1[0m" 500 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:24,274] INFO _log() L224   * Detected change in '/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/schemas/hospede.py', reloading - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:24,364] INFO _log() L224   * Restarting with stat - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:31,765] INFO _log() L224   * Detected change in '/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/app.py', reloading - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:31,835] INFO _log() L224   * Restarting with stat - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:33,006] INFO _log() L224   * Detected change in '/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/app.py', reloading - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:33,074] INFO _log() L224   * Restarting with stat - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:34,233] INFO _log() L224   * Detected change in '/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/app.py', reloading - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:34,299] INFO _log() L224   * Restarting with stat - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:35,949] INFO _log() L224  127.0.0.1 - - [11/Jul/2023 15:31:35] "[35m[1mGET /openapi/swagger HTTP/1.1[0m" 500 - - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
+[2023-07-11 15:31:35,964] ERROR _log() L224  Error on request:
+Traceback (most recent call last):
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/app.py", line 31, in <module>
+    def add_produto(form: HospedeSchema):
+NameError: name 'HospedeSchema' is not defined - call_trace=/Users/wesleydamiani/Desktop/desenvolvimento-full-stack-main/desenvolvimento-full-stack-basico/aula-3/meu_app_api/env/lib/python3.11/site-packages/werkzeug/_internal.py L224 
